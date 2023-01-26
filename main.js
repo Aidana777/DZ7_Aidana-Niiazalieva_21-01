@@ -3,7 +3,7 @@ class Component {
         this.$element = document.querySelector(selector)
     }
 
-    hide() {
+    hide() {vvc
         this.$element.style.display = 'none'
     }
 
