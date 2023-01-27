@@ -6,6 +6,7 @@ class Svetofor {
     }
 }
 
+
 class Circle extends Svetofor {
     constructor(options) {
         super(options.selector);
@@ -23,18 +24,25 @@ if (color === 'красный') {
         color: 'red'
 
     })
+    red.hide()
+    red.show()
 } else if (color === 'желтый') {
     const yellow = new Circle({
         selector: '#yellow',
         razmer: 90,
         color: 'yellow'
     })
+    yellow.hide()
+    yellow.show()
+
 } else if (color === 'зеленый') {
     const green = new Circle({
         selector: '#green',
         razmer: 90,
         color: 'green'
     })
+    green.hide()
+    green.show()
 } else {
     alert('ERROR')
 }
