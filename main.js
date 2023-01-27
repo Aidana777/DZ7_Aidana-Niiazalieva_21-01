@@ -4,7 +4,15 @@ class Svetofor {
     constructor(selector) {
         this.$element = document.querySelector(selector)
     }
+
+    hide() {
+        this.$element.style.display = 'none'
+    }
+    show() {
+        this.$element.style.display = 'block'
+    }
 }
+
 
 
 class Circle extends Svetofor {
