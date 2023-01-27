@@ -20,6 +20,10 @@ class Block extends Component {
         this.$element.style.width = this.$element.style.height = options.razmer + 'px'
         this.$element.style.background = options.cvet
         this.$element.style.borderRadius = '50%'
+        let color = prompt('')
+        if (color === "red") {
+            red.red()
+        }
     }
 }
 
@@ -39,10 +43,7 @@ class Circle extends Block {
     constructor(options) {
         super(options);
         this.$element.style.borderRadius = '50%'
-        let color = prompt('')
-        if (color === "green") {
-            green.green()
-        }
+       
     }
 }
 
