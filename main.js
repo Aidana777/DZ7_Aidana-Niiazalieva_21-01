@@ -23,6 +23,8 @@ class Block extends Component {
         let color = prompt('')
         if (color === "red") {
             red.red()
+        }else if(color==='yellow'){
+            yellow.yellow()
         }
     }
 }
@@ -55,3 +57,7 @@ const circle = new Circle({
 
 circle.hide()
 circle.show()
+block1.hide()
+block1.show()
+block2.hide()
+block2.show()
