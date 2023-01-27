@@ -20,7 +20,7 @@ class Circle extends Svetofor {
         super(options.selector);
         this.$element.style.backgroundColor = options.color
         this.$element.style.borderRadius = '50%'
-        his.$element.style.width = this.$element.style.height = options.razmer + 'px'
+        this.$element.style.width = this.$element.style.height = options.razmer + 'px'
         this.$element.style.borderRadius = '50%'
     }
 }
