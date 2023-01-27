@@ -3,7 +3,8 @@ class Component {
         this.$element = document.querySelector(selector)
     }
 
-    hide() {vvc
+    hide() {
+        vvc
         this.$element.style.display = 'none'
     }
 
@@ -18,25 +19,30 @@ class Block extends Component {
 
         this.$element.style.width = this.$element.style.height = options.razmer + 'px'
         this.$element.style.background = options.cvet
+        this.$element.style.borderRadius = '50%'
     }
 }
 
 const block1 = new Block({
     selector: '#block1',
-    razmer: 150,
-    cvet: 'blue'
+    razmer: 90,
+    cvet: 'red'
 })
 
 const block2 = new Block({
     selector: '#block2',
-    razmer: 200,
-    cvet: 'red'
+    razmer: 90,
+    cvet: 'yellow'
 })
 
 class Circle extends Block {
     constructor(options) {
         super(options);
         this.$element.style.borderRadius = '50%'
+        let color = prompt('')
+        if (color === "green") {
+            green.green()
+        }
     }
 }
 
